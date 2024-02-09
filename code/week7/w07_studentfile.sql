@@ -1,3 +1,46 @@
+-- *********************************
+-- W07 STUDENT SQL WORKBOOK
+-- *********************************
+
+-- *********************************
+-- CRUD - DML
+-- C = Create the Records (INSERT)
+-- R = Read the Data (SELECT)
+-- U = Update the Database (UPDATE)
+-- D = Delete Data (DELETE)
+-- *********************************
+
+-- ***
+-- C
+-- ***
+
+
+
+
+
+-- ***
+-- R
+-- ***
+
+
+
+
+
+-- ***
+-- U
+-- ***
+
+
+
+
+-- ***
+-- D
+-- ***
+
+-- OR sequentially number the tasks
+-- TODO change to WORLD DB
+
+
 -- Use the art database
 
 -- Outputs all columns from the table 'artwork'

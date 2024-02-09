@@ -1,4 +1,55 @@
--- Create a new database titled 'mdb'
+-- *********************************
+-- W06 STUDENT SQL WORKBOOK
+-- *********************************
+
+-- *********************************
+-- CRUD - DDL
+-- C = Create the Database (FORWARD ENGINEER)
+-- R = Read the Data (SELECT)
+-- U = Update the Database (INSERT)
+-- D = Delete Data or Database (DROP)
+-- *********************************
+
+-- ***
+-- C
+-- ***
+
+-- write insert statements for all parent tables
+-- write insert statements for all child tables
+-- write insert statements for all linking tables
+
+
+
+-- ***
+-- R
+-- ***
+
+-- click on tablel icon next to each table to auto generate a select all statement
+
+
+
+-- ***
+-- U
+-- ***
+
+-- use church insert sql file
+
+
+-- ***
+-- D
+-- ***
+
+-- delete the initial records you had inserted
+
+
+
+-- _________________________________________________________________
+-- TODO: change to CHURCH DB
+-- TODO: sequence or fit in the groups above
+-- TODO: add best practices with insert order
+-- _________________________________________________________________
+
+-- 1.) Create a new database titled 'mdb'
 
 -- Switch system to use the 'mdb' database
 
