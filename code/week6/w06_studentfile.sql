@@ -3,20 +3,39 @@
 -- *********************************
 
 -- *********************************
--- CRUD - DDL
--- C = Create the Database (FORWARD ENGINEER)
+-- CRUD - DDL / DML
+-- C = Create the Database (FORWARD ENGINEER / INSERT)
 -- R = Read the Data (SELECT)
--- U = Update the Database (INSERT)
--- D = Delete Data or Database (DROP)
+-- U = Update the Database (ALTER / UPDATE)
+-- D = Delete Data or Database (DROP / DELETE)
 -- *********************************
 
 -- ***
 -- C
 -- ***
+/*
+    List the column names in the INSERT statement so you know
+    which columns you are inserting into. We do not need to 
+    list the primary key column as it is auto-incrementing
+    Here is an example template:
+    INSERT INTO tablename
+    ( column_1
+    , column_2
+    , etc)
+    VALUES
+    ( 'String value'
+    , 12
+    , '2024-01-31' );
 
--- write insert statements for all parent tables
--- write insert statements for all child tables
--- write insert statements for all linking tables
+    For more than one record, replace the ; with a comma then
+    repeat the same structure as the previous tuple.
+*/
+
+-- 1. Open and run the church_insert.sql file
+
+-- 2. Write an INSERT statement for all parent tables
+-- 3. Write an INSERT statement for all child tables
+-- 4. Write an INSERT statement for all linking tables
 
 
 
@@ -24,7 +43,12 @@
 -- R
 -- ***
 
--- click on tablel icon next to each table to auto generate a select all statement
+-- 5. Switch system to use the 'church' database
+
+/* 6.
+ Click on the table icon next to each table in the Schema list
+ to auto generate a SELECT all statement
+*/
 
 
 
@@ -32,14 +56,13 @@
 -- U
 -- ***
 
--- use church insert sql file
-
+ -- 7. Update the calling of Doris to Relief Society President
 
 -- ***
 -- D
 -- ***
 
--- delete the initial records you had inserted
+-- 8. Delete the records of Jared MacWilliamns and Doris Garcia
 
 
 
@@ -48,42 +71,6 @@
 -- TODO: sequence or fit in the groups above
 -- TODO: add best practices with insert order
 -- _________________________________________________________________
-
--- 1.) Create a new database titled 'mdb'
-
--- Switch system to use the 'mdb' database
-
--- Create a table called 'actors' with two columns/attributes 'last_name' and 'first_name' of the string data type (varchar)
--- Varchar is for a variable amount of characters with a maximum number
--- Not null makes it required; auto increment gives it an incrementing number (surrogate key) as you insert records
-
-
--- View all the columns (*) from the table 'actors'
-
--- Make/insert a new record for 'Tom Hanks' and 'Tim Allen'
--- 'NULL' normally would put an empty value, but if set as an auto incrementing column, 'NULL' will put a key starting with the number '1', '2', etc.
-
--- Make a new record for 'Annie Potts' 
--- 'DEFAULT' will input whatever default value was set for that column (ex: 'Idaho' if set),
--- But if set as an auto incrementing column, 'DEFAULT' will also put the next number in te list as '3', '4', etc.
-
-
--- Make a new record for 'Carrie Fisher'
--- Best to always put the column names and have them match the values so you know which one is going where
--- You can skip the auto incrementing primary key if 'AI' is checked
-
-
--- Change the auto_increment number to start back at 6 if you deleted any numbers or want to start somewhere specific
-
--- Create a new table called 'movies' and provide the settings, column names, storage types, etc.
-
--- Output all columns from the table movies
-
--- Create record for the movie Toy Story, G, 1995, Pixar
-
--- Or (skipping the auto incrementing column ID and it will do it automatically)
-
--- Or
 
 -- This is VERY DANGEROUS and will change all actors to 'Tommy'
 -- If safe mode is enabled it could prevent it but don't plan on that
