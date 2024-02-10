@@ -17,7 +17,9 @@
     List the column names in the INSERT statement so you know
     which columns you are inserting into. We do not need to 
     list the primary key column as it is auto-incrementing
+    
     Here is an example template:
+    
     INSERT INTO tablename
     ( column_1
     , column_2
@@ -67,9 +69,9 @@
 
 
 -- _________________________________________________________________
--- TODO: change to CHURCH DB
--- TODO: sequence or fit in the groups above
--- TODO: add best practices with insert order
+-- TODO: add update structure example similar to Insert
+-- TODO: add delete strucuture example similar to Insert
+-- TODO: remove this TODO text and all text below
 -- _________________________________________________________________
 
 -- This is VERY DANGEROUS and will change all actors to 'Tommy'
