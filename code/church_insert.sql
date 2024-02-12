@@ -1,12 +1,12 @@
 USE church;
 
-INSERT INTO unit_type
+INSERT INTO unit_type -- Parent Table
 (unit_type_name)
 VALUES
 ('Stake'),
 ('Ward');
 
-INSERT INTO unit
+INSERT INTO unit -- Child Table
 ( unit_name
 , unit_type_id
 , parent_unit_id)
@@ -21,7 +21,7 @@ VALUES
 , 2
 , 1);
 
-INSERT INTO member
+INSERT INTO member -- Child Table of unit
 ( first_name
 , last_name
 , dob
@@ -36,13 +36,13 @@ VALUES
 , '1990-03-24'
 , 3);
 
-INSERT INTO mission
+INSERT INTO mission -- Parent Table
 (mission_name)
 VALUES
 ('USA Georgia Macon'),
 ('Mexico Monterey');
 
-INSERT INTO member_mission
+INSERT INTO member_mission -- Linking table
 ( member_id
 , mission_id
 , start_date
@@ -57,19 +57,19 @@ VALUES
 , '2011-08-11'
 , '2013-08-10' );
 
-INSERT INTO position
+INSERT INTO position -- Parent Table
 ( position_name )
 VALUES
 ('1st Counselor'),
 ('Teacher');
 
-INSERT INTO organization
+INSERT INTO organization -- Parent Table
 (organization_name)
 VALUES
 ('Elders Quorum'),
 ('Primary');
 
-INSERT INTO unit_organization
+INSERT INTO unit_organization -- Linking Table
 ( unit_id
 , organization_id)
 VALUES
@@ -78,7 +78,7 @@ VALUES
 ( 2
 , 2 );
 
-INSERT INTO calling
+INSERT INTO calling -- Linking Table
 ( organization_id
 , position_id
 , member_id )
@@ -90,7 +90,7 @@ VALUES
 , 2
 , 2 );
 
-INSERT INTO ordinance
+INSERT INTO ordinance -- Parent Table
 (ordinance_name)
 VALUES
 ('Baby Blessing'),
@@ -101,7 +101,7 @@ VALUES
 ('Marriage'),
 ('Sealing');
 
-INSERT INTO member_ordinance
+INSERT INTO member_ordinance -- Linking Table
 ( member_id
 , ordinance_id
 , ordinance_date )
