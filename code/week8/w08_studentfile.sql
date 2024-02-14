@@ -1,3 +1,10 @@
+-- *********************************
+-- W08 STUDENT SQL WORKBOOK
+-- *********************************
+
+-- TODO Use the example problem solving as part of the workbook? 
+--      Bring them into here?
+
 -- Use the bike DB
 
 -- Output all columns (*) from the 'store' table
