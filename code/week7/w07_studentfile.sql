@@ -2,25 +2,6 @@
 -- W07 STUDENT SQL WORKBOOK
 -- *********************************
 
--- *********************************
--- CRUD - DML
--- C = Create the Records (INSERT)
--- R = Read the Data (SELECT)
--- U = Update the Database (UPDATE)
--- D = Delete Data (DELETE)
--- *********************************
-
--- ***
--- C
--- ***
-
--- Do we need C this week?
-
-
--- ***
--- R
--- ***
-
 -- Read (SELECT) may be all we need for this week
 -- 1. SELECT all columns from the country table
 -- 2. SELECT the name, population, and continent from the country table
@@ -49,19 +30,10 @@
 -- 20. Modify the previous query to find the LifeExpectancy of Germany and the US.
 --     If we remove the ORDER BY statement, does it affect the query?
 
--- ***
--- U
--- ***
-
-
-
-
--- ***
--- D
--- ***
 
 -- TODO change to WORLD DB - DONE
 -- TODO add in DISTINCT queries
+-- TODO Add the use of AND in the queries
 -- TODO REGEXP??
 -- TODO show aliases?
 -- TODO Use the Bike database to show calculations?
