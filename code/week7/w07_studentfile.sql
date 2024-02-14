@@ -34,7 +34,7 @@
 -- TODO change to WORLD DB - DONE
 -- TODO add in DISTINCT queries
 -- TODO Add the use of AND in the queries
--- TODO REGEXP??
+-- TODO REGEXP?
 -- TODO show aliases?
 -- TODO Use the Bike database to show calculations?
 
