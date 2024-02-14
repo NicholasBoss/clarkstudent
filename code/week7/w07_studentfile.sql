@@ -14,17 +14,40 @@
 -- C
 -- ***
 
-
-
+-- Do we need C this week?
 
 
 -- ***
 -- R
 -- ***
 
+-- Read (SELECT) may be all we need for this week
+-- 1. SELECT all columns from the country table
+-- 2. SELECT the name, population, and continent from the country table
+-- 3. Filter the previous query by populations bigger than 800,000
+-- 4. Switch the filter to only show countries from the Americas
+-- 5. ORDER BY the population from greatest to least
+-- 6. Switch the ORDER BY to use continent, then name
+-- 7. What is DESC doing? What do we do to show the results in alphabetical order?
+-- 8. Do the same queries as above without DESC. What do we find as the smallest
+--    country in the Americas?
+-- 9. Filter the query by population between 400,000 and 500,000
+-- 10. ORDER BY population
 
+-- 11. Select all city names that begin with 'Las'
+-- 12. Add the CountryCode to tell which country those cities reside in
+-- 13. SELECT all city names that end in 'gre'
+-- 14. SELECT all city names with 'end' somewhere in them
 
-
+-- 15. SELECT all country names, lifeExpectancy, and continent
+--     WHERE LifeExpectancy IS NULL
+-- 16. Modify the previous query to use: IS NOT NULL
+-- 17. ORDER the previous query by LifeExpectancy
+-- 18. Modify the previous query to find the country with the highest
+--     LifeExpectancy
+-- 19. What is the LifeExpectancy of the United States?
+-- 20. Modify the previous query to find the LifeExpectancy of Germany and the US.
+--     If we remove the ORDER BY statement, does it affect the query?
 
 -- ***
 -- U
@@ -37,11 +60,14 @@
 -- D
 -- ***
 
--- OR sequentially number the tasks
--- TODO change to WORLD DB
+-- TODO change to WORLD DB - DONE
+-- TODO add in DISTINCT queries
+-- TODO REGEXP??
+-- TODO show aliases?
+-- TODO Use the Bike database to show calculations?
 
 
--- Use the art database
+
 
 -- Outputs all columns from the table 'artwork'
 
