@@ -22,11 +22,21 @@ USE world;
 -- 7. What is DESC doing? What do we do to show the results in alphabetical order?
 -- 8. Do the same queries as above without DESC. What do we find as the smallest
 --    country in the Americas?
--- 9. Filter the query by population between 400,000 and 500,000
+-- 9. Filter the query by population BETWEEN 400,000 AND 500,000
 -- 10. ORDER BY population
 
 -- *******************************
 -- LIKE Operator (WHERE clause)
+/*
+   Using % as wildcard operators
+   we can specify whether or not
+   a string starts with, ends with
+   or contains part of the string:
+   'Las%'
+   '%Las'
+   '%Las%'
+   'Las_%'
+*/
 -- *******************************
 
 -- 11. Select all city names that begin with 'Las'
@@ -36,6 +46,12 @@ USE world;
 
 -- *******************************
 -- IS NULL/IS NOT NULL Operators
+/*
+   We apply IS NULL and IS NOT NULL
+   to the end of a column in the WHERE
+   clause. This will filter by NULL or
+   NOT NULL values.
+*/
 -- *******************************
 
 -- 15. SELECT all country names, lifeExpectancy, and continent
