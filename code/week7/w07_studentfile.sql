@@ -94,6 +94,7 @@ WHERE (product_name LIKE 'Trek%' OR product_name LIKE 'Surly%') AND NOT model_ye
 -- change AND to OR and now you get other brands that are not 2016
 -- Without the ()s is only takes off 2016s for Surly
 -- OR with REGEX and another NOT <>
+-- The ^ means 'begins with'
 SELECT product_name, model_year
 FROM product
 WHERE (product_name REGEXP '^Trek' OR product_name REGEXP '^Surly') AND model_year <> 2016;
