@@ -18,11 +18,11 @@ USE world;
 -- 3. Filter the previous query by populations bigger than 800,000 (>)
 -- 4. Switch the filter to only show countries from the Americas (OR/IN)
 -- 5. ORDER BY the population from greatest to least (DESC)
--- 6. Switch the ORDER BY to use continent, then name
+-- 6. Switch the ORDER BY to use continent, then switch continent to name
 -- 7. What is DESC doing? What do we do to show the results in alphabetical order?
 -- 8. Do the same queries as above without DESC. What do we find as the smallest
 --    country in the Americas?
--- 9. Filter the query by population BETWEEN 400,000 AND 500,000
+-- 9. Switch the filter to be: population BETWEEN 400,000 AND 500,000
 -- 10. ORDER BY population
 
 -- *******************************
