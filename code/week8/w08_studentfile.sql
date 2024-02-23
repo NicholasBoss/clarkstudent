@@ -13,23 +13,14 @@
      To remember this: Stay Firm With Our Lord
 */
 
-/*
-    
-
-    ROUND()
-    FORMAT()
-
-    DATEDIFF()
-    DATE_ADD()
-    DATE_FORMAT()
-    NOW()
-    
-
-*/
-
 -- *******************************
 -- Function Reference
 -- https://www.w3schools.com/mysql/mysql_ref_functions.asp
+-- *******************************
+
+
+-- *******************************
+-- String Manipulation
 -- *******************************
 
 /*
@@ -42,11 +33,8 @@
     LOWER()
     TRIM()
     RTRIM()
-    LTRIM()*/
-
--- *******************************
--- String Manipulation
--- *******************************
+    LTRIM()
+*/
 
 -- Use the bike database
 
@@ -56,12 +44,11 @@
 
 -- 3. If we used store_id which is an integer that would become a part of the string and would not be an integer any more.
 
--- 4. Show me only the first 15 characters for all the product names
+-- 4. Show me only the first 15 characters for all the product names (Hint: try RIGHT)
 
--- try RIGHT
 -- 5. Show me only the last 10 characters for all the product names
 
-
+-- DEMO:
 -- Trim the spaces from a line of text; deletes any spaces from the left (leading) and right (trailing)
 SELECT TRIM('    This is the password   ') , ('This is the password');
 -- Trim the right side; deletes any spaces from the right (trailing)
@@ -73,16 +60,22 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 
 -- 7. Change all the text to lower case for store names
 
--- parameters for LOCATE(find, search, [start]) returns an integer of where it is located
+-- Note: parameters for LOCATE(find, search, [start]) returns an integer of where it is located
 -- 8. Show me the starting location letter's number of the word 'Girl' and return the product name too 
 --    only display the ones that have the word Girl
 
--- parameters for SUBSTRING(string, start, length)--
+-- Note: parameters for SUBSTRING(string, start, length)--
 -- 9. Show me the text from product_names starting at character 9 and show the next 6 characters
+
 
 -- *******************************
 -- Number Manipulation
 -- *******************************
+
+/*
+    ROUND()
+    FORMAT()
+*/
 
 -- 10. Show prices of products
 
@@ -99,12 +92,22 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 -- Date Manipulation
 -- *******************************
 
+/*
+    ROUND()
+    FORMAT()
+
+    DATEDIFF()
+    DATE_ADD()
+    DATE_FORMAT()
+    NOW()
+*/
+
 -- 15. Show me the year of the order date
 
 -- 16. Show me the day of the order date
 
---  17. Show me the month of the order date
--- SELECT MONTH(order_date), order_date
+-- 17. Show me the month of the order date
+-- Hint: SELECT MONTH(order_date), order_date
 
 -- 18. Show me the system date and time (There are 2 ways)
 
