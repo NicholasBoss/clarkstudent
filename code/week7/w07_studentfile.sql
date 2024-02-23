@@ -9,6 +9,8 @@
      WHERE    column_name = condition
      ORDER BY column_name (DESC)
      LIMIT    # of rows;
+
+     To remember this: Stay Firm With Our Lord
 */
 
 USE world;
@@ -18,7 +20,8 @@ USE world;
 -- 3. Filter the previous query by populations bigger than 800,000 (>)
 -- 4. Switch the filter to only show countries from the Americas (OR/IN)
 -- 5. ORDER BY the population from greatest to least (DESC)
--- 6. Switch the ORDER BY to use continent, then switch continent to name
+-- 6. Switch the ORDER BY to use continent, then switch continent to name.
+--    Filter the name starting from G through J
 -- 7. What is DESC doing? What do we do to show the results in alphabetical order?
 -- 8. Do the same queries as above without DESC. What do we find as the smallest
 --    country in the Americas?
@@ -35,7 +38,7 @@ USE world;
    'Las%'
    '%Las'
    '%Las%'
-   'Las_%'
+   'Las %'
 */
 -- *******************************
 
@@ -74,10 +77,9 @@ USE bike;
 SELECT product_name, model_year, list_price, list_price + 100
 FROM product;
 
--- Show me products, model years, and list price and list the column as "price_adjustment"
+-- Show me products, and list price and list the column as "price_adjustment"
 -- and show me only the prices over $1000
--- Round to 2 decimal places
-SELECT product_name, ROUND(list_price + 100) AS price_adjustment
+SELECT product_name, list_price + 100 AS price_adjustment
 FROM product
 WHERE list_price + 100 > 1000   -- can't use price_adjustment here because of Order of Executuion
 ORDER BY price_adjustment;     -- can use it here however
