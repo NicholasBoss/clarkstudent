@@ -4,7 +4,7 @@
 
 /*
      SELECT   column_name AS 'Alias1'
-     ,        Functioncolumn_name_2 AS 'Alias2'
+     ,        Function(column_name_2) AS 'Alias2'
      FROM     table_name
      WHERE    column_name = condition
      ORDER BY column_name (DESC)
@@ -14,16 +14,7 @@
 */
 
 /*
-    CONCAT()
-    RIGHT()
-    LEFT()
-    LOCATE()
-    SUBSTRING_INDEX()
-    UPPER()
-    LOWER()
-    TRIM()
-    RTRIM()
-    LTRIM()
+    
 
     ROUND()
     FORMAT()
@@ -36,25 +27,40 @@
 
 */
 
--- TODO Use the example problem solving as part of the workbook? 
---      Bring them into here?
+-- *******************************
+-- Function Reference
+-- https://www.w3schools.com/mysql/mysql_ref_functions.asp
+-- *******************************
 
--- Use the bike DB
+/*
+    CONCAT()
+    RIGHT()
+    LEFT()
+    LOCATE()
+    SUBSTRING_INDEX()
+    UPPER()
+    LOWER()
+    TRIM()
+    RTRIM()
+    LTRIM()*/
 
--- Output all columns (*) from the 'store' table
+-- *******************************
+-- String Manipulation
+-- *******************************
 
--- Add some text with two columns like this: "The 'store_name' email is 'email'" 
+-- Use the bike database
 
--- if we used store_id which is an integer that would become a part of the string and would not be an integer any more.
+-- 1. Output all columns (*) from the 'store' table
 
--- Show me only the first 15 characters for all the product names
+-- 2. Add some text with two columns like this: "The 'store_name' email is 'email'" 
+
+-- 3. If we used store_id which is an integer that would become a part of the string and would not be an integer any more.
+
+-- 4. Show me only the first 15 characters for all the product names
 
 -- try RIGHT
--- Show me only the last 10 characters for all the product names
+-- 5. Show me only the last 10 characters for all the product names
 
--- Show me the number count of letters including spaces for the product names
-
--- try LTRIM and RTRIM
 
 -- Trim the spaces from a line of text; deletes any spaces from the left (leading) and right (trailing)
 SELECT TRIM('    This is the password   ') , ('This is the password');
@@ -63,63 +69,49 @@ SELECT RTRIM('    This is the password   '), ('    This is the password');
 -- Trim the left side; deletes any spaces from the left (leading)
 SELECT LTRIM('    This is the password   '), ('This is the password   ');
 
--- Change all the text to upper case for store names
+-- 6. Change all the text to upper case for store names
 
--- Change all the text to upper case for store names
+-- 7. Change all the text to lower case for store names
 
 -- parameters for LOCATE(find, search, [start]) returns an integer of where it is located
--- Show me the starting location letter's number of the word 'Girl' and return the product name too 
--- only display the ones that have the word Girl
+-- 8. Show me the starting location letter's number of the word 'Girl' and return the product name too 
+--    only display the ones that have the word Girl
 
 -- parameters for SUBSTRING(string, start, length)--
--- Show me the text from product_names starting at character 9 and show the next 6 characters
+-- 9. Show me the text from product_names starting at character 9 and show the next 6 characters
 
--- Show me only the word "Girl's" in product_names
--- returns true if found
+-- *******************************
+-- Number Manipulation
+-- *******************************
 
--- Use the art database
+-- 10. Show prices of products
 
--- Show the artwork
+-- 11. Round the list price from products and show the price - do it for 1 digit, 2 digits, 3, no parameter
 
--- Art database return the starting location of the word 'woman' for all artwork 
--- (and returning 0 if it doesn't have the word)
+-- 12. Round down (remove any decimal)
 
--- Do the same thing but return the word 'Woman' (5 letters long)
+-- 13. Roundup  the list price from products and show the price
 
--- NUMERIC functions
+-- 14. Return the prices with the dollar sign in front
 
--- Use the bike DB
 
--- Show prices of products
+-- *******************************
+-- Date Manipulation
+-- *******************************
 
--- Round the list price from products and show the price - do it for 1 digit, 2 digits, 3, no parameter
+-- 15. Show me the year of the order date
 
--- Round down (remove any decimal)
+-- 16. Show me the day of the order date
 
--- Roundup  the list price from products and show the price
-
--- Return the prices with the dollar sign in front
-
--- DATE functions
-
--- Show me the year of the order date
-
--- Show me the day of the order date
-
--- Show me the month of the order date
+--  17. Show me the month of the order date
 -- SELECT MONTH(order_date), order_date
 
--- Show me the minute of now
+-- 18. Show me the system date and time (There are 2 ways)
 
--- Show me the system date and time, same as now
+-- 19. Add 9 days to the order_date 
 
 -- Show me how many days until Halloween
 SELECT DATEDIFF('2024-10-31', NOW()) AS 'Days until Halloween';
-
--- Show me how long it took to ship from the order date
--- days it took from order to shipped
-
--- Add 9 days to the orderdate 
 
 -- What does this do? 
 SELECT CEILING(DATEDIFF('2023-12-25', '2023-6-25') / 7 ); -- DATEDIFF returns days, if you divide by 7, it ...
@@ -133,6 +125,85 @@ SELECT CEILING(DATEDIFF('2023-12-25', '2023-6-25') / 7 ); -- DATEDIFF returns da
 -- %Y	Year, 4 digits
 -- %W	Weekday name
 
--- Show me the order date as something like this 'January the 1st, 2035'
+-- 20. Show me the order date as something like this 'January 1st, 2035'
 
--- Show me the order date as something like this '1/1/35'
+
+-- **************************
+--  Problem Solving Practice
+-- **************************
+
+USE bike; -- for first 2 queries, magazine for last 2.
+
+-- 1. --parameters for DATEDIFF(date, date)
+-- Show the cust_order_id and using today's date. 
+-- How long in years, ROUNDED to the nearest year, 
+-- has it been since the product shipped.
+-- 1st step
+SELECT cust_order_id
+,      shipped_date
+,      shipped_date AS 'Years Since Shipped'
+FROM   cust_order;
+
+-- 2nd step, apply first function
+SELECT cust_order_id
+,      shipped_date
+,      DATEDIFF(shipped_date, NOW()) AS 'Years Since Shipped'
+FROM   cust_order;
+
+-- Oh its negative. I need to switch the dates
+SELECT cust_order_id
+,      shipped_date
+,      DATEDIFF(NOW(), shipped_date) AS 'Years Since Shipped'
+FROM   cust_order;
+
+-- 3rd step -- we need it in years
+SELECT cust_order_id
+,      shipped_date
+,      DATEDIFF(NOW(), shipped_date)/365 AS 'Years Since Shipped'
+FROM   cust_order;
+
+-- 4th step -- Now I need to round it
+SELECT cust_order_id
+,      shipped_date
+,      ROUND(DATEDIFF(NOW(), shipped_date)/365) AS 'Years Since Shipped'
+FROM   cust_order;
+
+-- Query complete!
+
+-- 2. -- parameters for DATE_FORMAT(date, format)--
+	  -- parameters for DATE_ADD(date, interval)--
+-- Show the shipped_date
+-- Add 2 months to each shipped_date 
+-- Format that date so it takes the format of Month name, 
+-- number day with comma and then a 4 digit year like: 
+-- January 4, 2019
+-- 1st step
+
+-- 2nd step
+
+-- Does it look right?
+-- 3rd step
+
+-- Query finished.
+
+USE magazine;
+-- 3. -- parameters for LOCATE(find, search, start)
+-- Find any string with 'Ma' in it,
+-- we want to take from that word on and 
+-- take it off the magazine name
+-- 1st step
+
+-- 2nd step. Find only those with 'Ma' in it
+
+-- 3rd step. take anything from 'Ma' onward off the name
+
+-- Hmmm. The M is still there.
+
+-- 4th step. Get the M off too
+
+-- Looks good. Just add a space in the LOCATE function in the SELECT clause
+
+
+-- 4. -- What if we wanted the reverse of the last question?
+
+
