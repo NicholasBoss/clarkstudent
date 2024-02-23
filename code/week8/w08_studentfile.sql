@@ -2,6 +2,40 @@
 -- W08 STUDENT SQL WORKBOOK
 -- *********************************
 
+/*
+     SELECT   column_name AS 'Alias1'
+     ,        Functioncolumn_name_2 AS 'Alias2'
+     FROM     table_name
+     WHERE    column_name = condition
+     ORDER BY column_name (DESC)
+     LIMIT    # of rows;
+
+     To remember this: Stay Firm With Our Lord
+*/
+
+/*
+    CONCAT()
+    RIGHT()
+    LEFT()
+    LOCATE()
+    SUBSTRING_INDEX()
+    UPPER()
+    LOWER()
+    TRIM()
+    RTRIM()
+    LTRIM()
+
+    ROUND()
+    FORMAT()
+
+    DATEDIFF()
+    DATE_ADD()
+    DATE_FORMAT()
+    NOW()
+    
+
+*/
+
 -- TODO Use the example problem solving as part of the workbook? 
 --      Bring them into here?
 
