@@ -6,8 +6,8 @@
      SELECT   column_name AS 'Alias1'
      ,        column_name_2 AS 'Alias2'
      FROM     table_name
-     WHERE    column_name = condition
-     ORDER BY column_name (DESC)
+     WHERE    column_name = condition (This is used to filter)
+     ORDER BY column_name (DESC) (This is used to sort)
      LIMIT    # of rows;
 
      To remember this: Stay Firm With Our Lord
