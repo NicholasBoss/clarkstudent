@@ -64,7 +64,7 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 
 -- Note: parameters for LOCATE(find, search, [start]) returns 
 --       an integer of where it is located
--- 8. Show me the starting location letter's number of the word 'Girl' 
+-- 8. Locate the word 'Girl' in the product name 
 --    and return the product name too 
 --    only display the ones that have the word Girl
 
