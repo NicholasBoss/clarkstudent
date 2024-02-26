@@ -93,9 +93,6 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 -- *******************************
 
 /*
-    ROUND()
-    FORMAT()
-
     DATEDIFF()
     DATE_ADD()
     DATE_FORMAT()
