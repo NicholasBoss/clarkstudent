@@ -42,7 +42,8 @@
 
 -- 2. Add some text with two columns like this: "The 'store_name' email is 'email'" 
 
--- 3. If we used store_id which is an integer that would become a part of the string and would not be an integer any more.
+-- 3. If we used store_id instead of the store_name, 
+--    it would become a part of the string and would not be an integer any more.
 
 -- 4. Show me only the first 15 characters for all the product names (Hint: try RIGHT)
 
@@ -60,8 +61,10 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 
 -- 7. Change all the text to lower case for store names
 
--- Note: parameters for LOCATE(find, search, [start]) returns an integer of where it is located
--- 8. Show me the starting location letter's number of the word 'Girl' and return the product name too 
+-- Note: parameters for LOCATE(find, search, [start]) returns 
+--       an integer of where it is located
+-- 8. Show me the starting location letter's number of the word 'Girl' 
+--    and return the product name too 
 --    only display the ones that have the word Girl
 
 -- Note: parameters for SUBSTRING(string, start, length)--
@@ -79,13 +82,14 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 
 -- 10. Show prices of products
 
--- 11. Round the list price from products and show the price - do it for 1 digit, 2 digits, 3, no parameter
+-- 11. Round the list price from products and show the price 
+--     do it for no parameter,1 digit, 2 digits, and 3
 
 -- 12. Round down (remove any decimal)
 
 -- 13. Roundup  the list price from products and show the price
 
--- 14. Return the prices with the dollar sign in front
+-- 14. Return the prices with the dollar sign in front (Use FORMAT())
 
 
 -- *******************************
@@ -114,7 +118,8 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 SELECT DATEDIFF('2024-10-31', NOW()) AS 'Days until Halloween';
 
 -- What does this do? 
-SELECT CEILING(DATEDIFF('2023-12-25', '2023-6-25') / 7 ); -- DATEDIFF returns days, if you divide by 7, it ...
+SELECT CEILING(DATEDIFF('2023-12-25', '2023-6-25') / 7 ); 
+-- DATEDIFF returns days, if you divide by 7, it ...
 
 -- Format Code	Description
 -- %c	Month, numeric
