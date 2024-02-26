@@ -65,7 +65,7 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 --    only display the ones that have the word Girl
 
 -- Note: parameters for SUBSTRING(string, start, length)--
--- 9. Show me the text from product_names starting at character 9 and show the next 6 characters
+-- 9. Show me the actual text of Girl from product_names
 
 
 -- *******************************
