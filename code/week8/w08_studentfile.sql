@@ -50,7 +50,8 @@
 -- 5. Show me only the last 10 characters for all the product names
 
 -- DEMO:
--- Trim the spaces from a line of text; deletes any spaces from the left (leading) and right (trailing)
+-- Trim the spaces from a line of text; 
+-- deletes any spaces from the left (leading) and right (trailing)
 SELECT TRIM('    This is the password   ') , ('This is the password');
 -- Trim the right side; deletes any spaces from the right (trailing)
 SELECT RTRIM('    This is the password   '), ('    This is the password');
