@@ -9,7 +9,6 @@
      WHERE    column_name = condition
      ORDER BY column_name (DESC)
      LIMIT    # of rows;
-
      To remember this: Stay Firm With Our Lord
 */
 
@@ -211,5 +210,3 @@ USE magazine;
 
 
 -- 4. -- What if we wanted the reverse of the last question?
-
-
