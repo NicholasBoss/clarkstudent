@@ -85,7 +85,7 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 -- 10. Show prices of products
 
 -- 11. Round the list price from products and show the price 
---     do it for no parameter,1 digit, 2 digits, and 3
+--     do it for no parameter,1 decimal place, 2 decimal places, and 3 decimal places
 
 -- 12. Round down (remove any decimal)
 
