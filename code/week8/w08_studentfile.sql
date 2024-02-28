@@ -77,6 +77,8 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 
 /*
     ROUND()
+    FLOOR()
+    CEILING()
     FORMAT()
 */
 
