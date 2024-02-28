@@ -68,7 +68,9 @@ SELECT LTRIM('    This is the password   '), ('This is the password   ');
 --    only display the ones that have the word Girl
 
 -- Note: parameters for SUBSTRING(string, start, length)--
--- 9. Show me the actual text of Girl from product_names
+-- 9. Show me the product_name and then 
+--    extract the actual text of Girl from product_names as a new column
+--    return everything after the word 'Girl' in a new column
 
 
 -- *******************************
