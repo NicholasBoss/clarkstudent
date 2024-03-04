@@ -156,14 +156,24 @@ FROM magazine m
 -- *********************************
 -- TODO: add code to show these where possible
 -- Use artwork
-
--- Show all titles with their period and keyword.
-
+USE artwork;
 -- Common Error: missing the table alias. Throws an Unknown column error. Add the alias 'aw' after artwork
--- INNER JOIN artwork 
--- ON a.artist_id = aw.artist_id
+-- Show all titles with their period and keyword.
+SELECT     title
+,          period
+,          keyword
+FROM       artwork 
+INNER JOIN artwork_keyword awk
+ON         aw.artwork_id = awk.artwork_id
+INNER JOIN keyword k
+ON         awk.keyword_id = k.keyword_id;
 
--- Common Error: missing the table alias. Throws an ambiguity error. Add the table name 'a' or 'artist'
--- ON aw.artist_id = artist_id
-
--- Show all titles with their artist, period and keyword.
+-- Common Error: missing the table alias. Throws an ambiguity error. Add the table name 'aw' or 'artwork'
+SELECT     title
+,          period
+,          keyword
+FROM       artwork aw
+INNER JOIN artwork_keyword awk
+ON         artwork_id = awk.artwork_id
+INNER JOIN keyword k
+ON         awk.keyword_id = k.keyword_id;
