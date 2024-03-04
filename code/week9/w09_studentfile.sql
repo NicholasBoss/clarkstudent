@@ -154,7 +154,7 @@ FROM magazine m
 -- *********************************
 -- Common Errors & How to Fix Them
 -- *********************************
--- TODO: add code to show these where possible
+
 -- Use artwork
 USE artwork;
 -- Common Error: missing the table alias. Throws an Unknown column error. Add the alias 'aw' after artwork
