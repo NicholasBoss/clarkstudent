@@ -29,7 +29,35 @@
 -- but realize the USING clause isn't universal for all RDBMS 
 -- and there are some limitations with USING. 
 -- That is why we teach with ON not USING) 
--- TODO: ADD CODE TO DEMO USING AND COMMENTS WHY WE DONT
+
+-- ***************************************
+--  USING() "clause/function"
+-- We can use the USING "clause/function"
+-- only when the primary and foreign keys
+-- have the same name.  
+-- ***************************************
+
+SELECT     fname
+,          lname
+,          title
+FROM       artist a
+INNER JOIN artwork aw
+USING      (artist_id);
+
+-- ********************************************
+--  ON clause
+-- We use the ON clause because is becomes 
+-- very clear what ids you are talking about.
+-- ********************************************
+
+SELECT     fname
+,          lname
+,          title
+FROM       artist a
+INNER JOIN artwork aw
+ON         a.artist_id = aw.artist_id;
+
+
 
 -- NOTE: We specify INNER JOIN and not just JOIN to allow for cross server compatability 
 --    (it's industry standard as well to specify which join).
@@ -122,18 +150,6 @@ FROM magazine m
 	ON m.magazineKey = s.magazineKey
     RIGHT JOIN subscriber sr
     ON s.subscriberKey = sr.subscriberKey;
-
--- **************************
---  Problem Solving Practice
--- **************************
--- TODO: add problems that use functions String, Numeric, and Dates, with WHERE clauses and JOINS INNER, LEFT
--- 1. 
-
--- 2.
-
--- 3. 
-
--- 4.
 
 -- *********************************
 -- Common Errors & How to Fix Them
