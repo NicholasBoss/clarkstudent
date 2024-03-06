@@ -69,8 +69,10 @@ ON         a.artist_id = aw.artist_id;
 
 -- 3. Show all languages in country of Egypt. Note: You do not need the alias on Name this time but it is good to do so.
 
--- 4. Show the population and cities in the continents in the western hemisphere
---     Format the population and order by population from greatest to least.
+-- 4. Show the country and city populations and country and city names in the continents 
+--    in the western hemisphere (HINT: Use continent)
+--    Format the population and order by country population and city population 
+--    from greatest to least.
 
 -- Use the bike database
 
@@ -86,7 +88,7 @@ ON         a.artist_id = aw.artist_id;
 
 -- 7. On your own: All staff at Rowlett Bikes Store
 
--- 8. All products ordered with price and quantity, shows need for grouping later
+-- 8. All products ordered with price and quantity
 
 -- 9. All products ordered in March 2016
 
@@ -105,7 +107,7 @@ ON         a.artist_id = aw.artist_id;
 -- 11. What if I only want Leonardo diVinci's?
 --    OR fname = 'Leonardo'
 
--- 12. On their own: A list of all the artwork from artist in the 
+-- 12. On their own: A list of all the artwork from artists
 --    Show all art from the Netherlands. (title, artfile, period, arttype, artlocation).
 
 -- **************************
