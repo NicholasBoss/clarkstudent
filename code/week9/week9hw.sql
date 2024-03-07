@@ -1,12 +1,12 @@
 USE v_art;
 
--- 1. When you visit art.ceiwebdev.com, and you search by artist last name 
+-- 1. When you visit art.ceiwebdev.com, and you search by artist first name 
 --    and you choose Rembrandt, you get two resulting images 
 --    ("Night watch" and "Storm Galilee"). 
 --    Write the query that will display these images.
 
 -- 2. When you visit art.ceiwebdev.com, and you search by Subject and type in the word bat, 
---    you get three images. Write the query to display these images.
+--    you get one image. Write the query to display these images.
 --   (remember the keyword might have been 'battle' but they typed 'bat')
 
 -- 3. List ALL the artists from the artist table from Italy, 
