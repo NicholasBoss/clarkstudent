@@ -39,7 +39,7 @@ USE bike;
 
 
 -- 7. An important announcement was given to all the staff but those at your store (store_id 3). 
---    The same announcement needs to get to all the your staff. 
+--    The same announcement needs to get to all your staff. 
 --    You need a list of all the staff and their phone who are from your store.
 
 

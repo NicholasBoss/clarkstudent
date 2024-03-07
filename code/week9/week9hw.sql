@@ -6,7 +6,7 @@ USE v_art;
 --    Write the query that will display these images.
 
 -- 2. When you visit art.ceiwebdev.com, and you search by Subject and type in the word bat, 
---    you get one image. Write the query to display these images.
+--    you get one image. Write the query to display that image.
 --   (remember the keyword might have been 'battle' but they typed 'bat')
 
 -- 3. List ALL the artists from the artist table from Italy, 
