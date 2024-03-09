@@ -18,8 +18,10 @@ USE employees;
 --    Include the total amount of managers at the bottom of the list.
 
 -- 5. Get the average manager salaries in each department. 
---    We only need those departments that have average salaries that are below 70,000. 
---    Format the salary to 2 decimal places and a comma in the thousands place and dollar sign in front. 
+--    We only need those departments that have 
+--    average salaries that are below 70,000. 
+--    Format the salary to 2 decimal places and a comma 
+--    in the thousands place and dollar sign in front. 
 
 -- 6. Find out who the managers of the Research department are. 
 --    List the department name and the name of the managers.
