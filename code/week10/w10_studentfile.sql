@@ -293,23 +293,20 @@ GROUP BY   brand_name;
 -- 4. What is the total revenue for each magazine?
 --    What about using COUNT(*)
 
-
--- TODO: SHOULD WE ADD SOME OF THESE FOR MORE PRACTICE????
--- MAYBE DON'T DO THESE:
-
 -- Switch to the bike database
 
--- On your own -- Get the highest and lowest priced bike in each brand
+-- 5. Get the highest and lowest priced bike in each brand
 
--- On your own -- How many bikes we have total in stock everywhere. 13,511
+-- 6. How many bikes we have total in stock everywhere. 13,511
 
--- How can we group it to see how many of each bike we have in stock everywhere?
+-- 7. How can we group it to see how many of each bike we have in stock everywhere?
 
--- We can also see how many we have at of each bike at each store
+-- 8. We can also see how many we have at of each bike at each store
 
--- WITH ROLLUP shows a total of each bike at the stores and grand total at bottom 13,511
+-- 9. WITH ROLLUP shows a total of each bike at the stores and grand total at bottom 13,511
 
--- If we reverse the grouping with store name as group and product as the sub group we get the total of how many bikes we have at each store.
+-- 10. If we reverse the grouping with store name as group and product as the sub group we get the total of how many bikes we have at each store.
 
--- Now we can see if one specific bike is at any of the stores adding a WHERE
--- Do the same thing but only show bikes with the name 'Electra Cruiser 1 Ladies'
+-- 11.1 Now we can see if one specific bike is at any of the stores adding a WHERE
+
+-- 11.2 Do the same thing but only show bikes with the name 'Electra Cruiser 1 Ladies'
