@@ -32,6 +32,15 @@
     To remember this: For with God, He sends out love
 */
 
+/*
+  Common Aggregate Functions:
+  COUNT()
+  SUM()
+  AVG()
+  MAX()
+  MIN()
+*/
+
 -- Let's use the v_art database, select it
 USE v_art;
 
