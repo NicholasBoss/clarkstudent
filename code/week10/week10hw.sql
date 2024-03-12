@@ -19,7 +19,7 @@ USE employees;
 
 -- 5. Get the average manager salaries in each department. 
 --    We only need those departments that have 
---    average salaries that are below 70,000. 
+--    average salaries that are at or above 70,000. 
 --    Format the salary to 2 decimal places and a comma 
 --    in the thousands place and dollar sign in front. 
 
