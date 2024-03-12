@@ -231,7 +231,7 @@ GROUP BY model_year WITH ROLLUP;
 --       and aggregated (values and aggregates that are part of the group). 
 
 -- 25.1 Show me the average list price of each model year listed by year only if the list prices are over $2800
---     BUT ONLY SHOW me those model years with their averages over $4000
+--     BUT ONLY SHOW me those model years with their average prices over $4000
 SELECT model_year
 ,      FORMAT(AVG(list_price),2) AS 'Average Price'
 FROM   product
@@ -258,25 +258,24 @@ HAVING   list_price > 4000;
 
 -- 25.4 This works:
 SELECT model_year
-,      list_price
 ,      FORMAT(AVG(list_price),2) AS 'Average Price'
 FROM   product
 WHERE  list_price > 2800
-GROUP BY model_year, list_price
-HAVING   list_price > 4000;
+GROUP BY model_year
+HAVING   AVG(list_price) > 4000;
 
--- 27. An average price of each brand
+-- 26. An average price of each brand
 SELECT brand_name
-,      AVG(list_price) AS 'Average Price'
+,      FORMAT(AVG(list_price),2) AS 'Average Price'
 FROM   brand b
 INNER JOIN product p
 ON         b.brand_id = p.brand_id
 GROUP BY   brand_name;
 
--- 28. Filtering before and after the grouping
+-- 27. Filtering before and after the grouping
 --     Filter to all model years excluding and newer than 2016
 SELECT brand_name
-,      AVG(list_price) AS 'Average Price'
+,      FORMAT(AVG(list_price),2) AS 'Average Price'
 FROM   brand b
 INNER JOIN product p
 ON         b.brand_id = p.brand_id
