@@ -1,6 +1,6 @@
 USE bike;
 
--- 1. Get the unique quantity that we have in all our bike stocks.
+-- 1. What is the total count of unique bikes that we stock across all locations.
 
 -- 2. Show the number of bikes by store that need to be reordered 
 --    (those bikes that are out of stock). 
