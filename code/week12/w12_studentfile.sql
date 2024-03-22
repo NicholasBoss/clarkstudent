@@ -1,5 +1,5 @@
 -- *********************************
--- W11 STUDENT SQL WORKBOOK
+-- W12 STUDENT SQL WORKBOOK
 -- *********************************
 
 /*
@@ -288,7 +288,7 @@ VALUES
 -- ~
 USE v_art;
 -- ~
--- Qeek 9 Q1. - Rewrite using a subquery
+-- Week 9 Q1. - Rewrite using a subquery
 --    When you visit art.ceiwebdev.com, and you search by artist first name 
 --    and you choose Rembrandt, you get two resulting images 
 --    ("Night watch" and "Storm Galilee"). 
